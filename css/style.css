@@ -1,0 +1,131 @@
+body {
+    font-family: 'Proximanova Regular', serif;
+    font-size: 16px;
+    color: rgba(0, 0, 0, .8);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: 'liga' on
+}
+
+* {
+    outline: none!important
+}
+
+a {
+    text-decoration: none!important
+}
+
+
+@font-face {
+    font-family: 'Proximanova Light';
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/proximanova-light-webfont.ttf)
+}
+
+@font-face {
+    font-family: 'Proximanova Regular';
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/proximanova-regular-webfont.ttf)
+}
+
+@font-face {
+    font-family: 'Gotham Rounded Light';
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/gotham-rounded-light.ttf)
+}
+
+section#home {
+    position: relative;
+    overflow: hidden;
+    height: 700px
+}
+
+section#home .logo-background {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -6%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#home .logo-background img {
+    max-width: 75%;
+    max-height: 75%;
+    opacity: 0.95;
+}
+
+
+section#contact {
+    padding: 100px 0;
+    text-align: center
+}
+
+section#contact .btn {
+    color: #fff;
+    border-color: #4d67c3;
+    background: #1c3fb9;
+    margin-left: 10px;
+    padding: 14px;
+    padding-left: 37px;
+    padding-right: 37px
+}
+
+section#contact .btn-success:focus,
+section#contact .btn-success:hover,
+section#contact .btn-success:active,
+section#contact .btn-success:active:focus,
+section#contact .btn-success:active:hover {
+    color: #fff;
+    border-color: #4d67c3;
+    background: #1c3fb9;
+}
+
+section#contact h2 {
+    font-size: 36px;
+    margin-bottom: 22px
+}
+
+section#contact p {
+    margin-bottom: 30px;
+    color: rgba(0, 0, 0, .6)
+}
+
+#home::before {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 430px;
+    height: 350px;
+    content: '';
+    background-image: url(../images/bg.svg);
+    opacity: 0.6;
+    background-size: 100%
+}
+
+#home::after {
+    position: absolute;
+    right: 0;
+    bottom: -60px;
+    width: 430px;
+    height: 350px;
+    content: '';
+    transform: rotateY(-180deg);
+    background-image: url(../images/bg.svg);
+    opacity: 0.6;
+    background-size: 100%
+}
+
+@media (max-width:900px) {
+    #home::before,
+    #home::after {
+        display: none
+    }
+}
