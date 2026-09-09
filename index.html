@@ -2,41 +2,241 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Thukal Inc</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Thukal — software studio</title>
+	<meta name="description" content="Thukal is a small software studio. We build custom software for businesses, and ship products of our own.">
+
+	<meta property="og:title" content="Thukal — software studio">
+	<meta property="og:description" content="We build custom software for businesses, and ship products of our own.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://thukal.in">
+	<meta property="og:image" content="https://thukal.in/images/logo.png">
+
 	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-	<link rel="manifest" href="images/favicon/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="http://images/favicon/ms-icon-144x144.png">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg">
+	<link rel="shortcut icon" href="images/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+	<link rel="manifest" href="images/favicon/site.webmanifest">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="home-page">
-	<section id="home">
-		<div class="logo-background">
-			<img src="images/logo.png" alt="Logo">
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead" id="masthead">
+	<div class="masthead-inner">
+		<a class="brand" href="#top" aria-label="Thukal, home">
+			<img src="images/logo.png" alt="" width="34" height="26">
+			<span>thukal</span>
+		</a>
+		<nav class="nav" aria-label="Primary">
+			<a href="#work">Work</a>
+			<a href="#team">Team</a>
+			<a href="#careers">Careers</a>
+			<a class="nav-cta" href="mailto:hello@thukal.in">Say hello</a>
+		</nav>
+	</div>
+</header>
+
+<main id="main">
+
+	<!-- ───────────────────────────  HERO  ─────────────────────────── -->
+	<section class="hero" id="top">
+		<div class="hero-field" aria-hidden="true">
+			<svg id="particles" viewBox="0 0 620 460" preserveAspectRatio="xMidYMid meet" role="presentation">
+				<defs>
+					<linearGradient id="thukal-grad" x1="0" y1="1" x2="1" y2="0">
+						<stop offset="0%" stop-color="#5B4FC7"/>
+						<stop offset="52%" stop-color="#D6339B"/>
+						<stop offset="100%" stop-color="#F5A623"/>
+					</linearGradient>
+				</defs>
+			</svg>
+		</div>
+
+		<div class="hero-inner">
+			<p class="eyebrow">Software studio · est. 2019</p>
+			<h1 class="hero-title">
+				Small pieces,<br>
+				<em>assembled well.</em>
+			</h1>
+			<p class="hero-lede">
+				Thukal builds custom software for businesses that have outgrown
+				spreadsheets — and ships a handful of products of our own along the way.
+			</p>
+			<div class="hero-actions">
+				<a class="btn" href="mailto:hello@thukal.in">Start a project</a>
+				<a class="btn-quiet" href="#work">See what we've built</a>
+			</div>
 		</div>
 	</section>
 
-	<section id="contact">
-		<h2>About Us</h2>
-		<p>We are all young and energetic, wanted to be a part of challenging team? drop your resume at</p>
-		<a href="mailto:hello@thukal.in" class="btn btn-success">
-			hello@thukal.in
-		</a>
+	<!-- ───────────────────────────  SERVICES  ─────────────────────────── -->
+	<section class="band" id="services">
+		<div class="band-inner">
+			<div class="rail">
+				<h2 class="rail-label">What we do</h2>
+			</div>
+			<div class="col">
+				<ul class="services">
+					<li class="service">
+						<h3>Custom business software</h3>
+						<p>The system your operation actually runs on — billing, inventory, scheduling, reporting. Built around how you already work, not around a template.</p>
+					</li>
+					<li class="service">
+						<h3>Web and mobile apps</h3>
+						<p>Customer-facing products that hold up on a patchy connection and a three-year-old phone. Designed, built, and shipped to the stores.</p>
+					</li>
+					<li class="service">
+						<h3>Idea to first version</h3>
+						<p>You have a product in your head. We turn it into something real people can use in weeks, then keep cutting until only what matters is left.</p>
+					</li>
+					<li class="service">
+						<h3>Keeping it running</h3>
+						<p>Hosting, backups, monitoring, and the unglamorous fixes. Software you don't have to think about is the point.</p>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</section>
+
+	<!-- ───────────────────────────  WORK  ─────────────────────────── -->
+	<section class="band band-mist" id="work">
+		<div class="band-inner">
+			<div class="rail">
+				<h2 class="rail-label">Our work</h2>
+				<p class="rail-note">Products we own — built, shipped, and run by us.</p>
+			</div>
+			<div class="col">
+				<ul class="work">
+					<li class="card">
+						<span class="tag tag-product">Our product</span>
+						<h3>Vasool</h3>
+						<p>Loan management for microfinance companies — daily, weekly, EMI, gold and product loans, chit funds and savings, with route-wise collections and a mobile app for staff in the field.</p>
+						<a class="card-link" href="https://vasool.app">vasool.app</a>
+					</li>
+					<li class="card">
+						<span class="tag tag-product">Our product</span>
+						<h3>Kannadi.AI</h3>
+						<p>An AI mirror for retail. A customer photographs a product and themselves on the shop's tablet, and sees how it looks on them in seconds. <span lang="ta">கண்ணாடி</span> is Tamil for mirror.</p>
+						<a class="card-link" href="https://kannadi.ai">kannadi.ai</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<!-- ───────────────────────────  TEAM  ─────────────────────────── -->
+	<section class="band" id="team">
+		<div class="band-inner">
+			<div class="rail">
+				<h2 class="rail-label">The team</h2>
+				<p class="rail-note">You'll talk to the people who write the code.</p>
+			</div>
+			<div class="col">
+				<p class="team-lede">
+					No account managers, no handoffs. A handful of engineers and designers
+					who have been building things together long enough to disagree well.
+				</p>
+
+				<!-- For a photo, swap the .avatar div for:
+				     <img class="avatar-img" src="images/team/ganesh.jpg" alt="" width="72" height="72"> -->
+				<ul class="team">
+					<li class="member">
+						<div class="avatar" style="--pos: 0%" aria-hidden="true">G</div>
+						<h3>Ganesh</h3>
+						<p>CEO · Co-founder</p>
+					</li>
+					<li class="member">
+						<div class="avatar" style="--pos: 20%" aria-hidden="true">K</div>
+						<h3>Kiruthika</h3>
+						<p>CHO · Co-founder</p>
+					</li>
+					<li class="member">
+						<div class="avatar" style="--pos: 40%" aria-hidden="true">S</div>
+						<h3>Sudhakar</h3>
+						<p>CTO</p>
+					</li>
+					<li class="member">
+						<div class="avatar" style="--pos: 60%" aria-hidden="true">P</div>
+						<h3>Prakash</h3>
+						<p>AI Engineer</p>
+					</li>
+					<li class="member">
+						<div class="avatar" style="--pos: 80%" aria-hidden="true">R</div>
+						<h3>Rajesh</h3>
+						<p>AI Engineer</p>
+					</li>
+					<li class="member">
+						<div class="avatar" style="--pos: 100%" aria-hidden="true">T</div>
+						<h3>Tennish</h3>
+						<p>Sourcing Executive · Sales &amp; Support</p>
+					</li>
+					<li class="member member-more">
+						<div class="avatar avatar-more" aria-hidden="true">+</div>
+						<h3>and many more</h3>
+						<p>Designers, testers, and the ones who keep it all running.</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<!-- ───────────────────────────  CAREERS  ─────────────────────────── -->
+	<section class="band band-mist" id="careers">
+		<div class="band-inner">
+			<div class="rail">
+				<h2 class="rail-label">Careers</h2>
+			</div>
+			<div class="col">
+				<div class="callout">
+					<h3>We're small, and we like it that way.</h3>
+					<p>
+						No open roles listed right now — but if you write good software and want
+						to own what you build rather than tick off tickets, write to us anyway.
+						Tell us what you've made and what you'd like to make next.
+					</p>
+					<a class="btn" href="mailto:hello@thukal.in?subject=Working%20at%20Thukal">hello@thukal.in</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ───────────────────────────  CONTACT  ─────────────────────────── -->
+	<section class="contact" id="contact">
+		<div class="contact-inner">
+			<p class="eyebrow">Have something to build?</p>
+			<a class="contact-mail" href="mailto:hello@thukal.in">hello@thukal.in</a>
+			<p class="contact-note">Tell us what's broken or what's missing. We'll tell you honestly whether we're the right people for it.</p>
+		</div>
+	</section>
+
+</main>
+
+<footer class="footer">
+	<div class="footer-inner">
+		<p class="footer-name">
+			<img src="images/logo.png" alt="" width="26" height="20">
+			<span>Thukal</span>
+		</p>
+		<p class="footer-meaning">
+			<em>thukal</em> · <span lang="ta">துகள்</span> · Tamil for <em>particle</em>. Good software is a great many small decisions.
+		</p>
+		<p class="footer-meta">
+			<span>Salem, India</span>
+			<span>&copy; <span id="year">2026</span> Thukal</span>
+		</p>
+	</div>
+</footer>
+
+<script src="js/particles.js" defer></script>
 </body>
 </html>
