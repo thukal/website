@@ -1,0 +1,37 @@
+# Thukal — a plain static site. There is no build step: Netlify publishes the
+# repo root exactly as it sits in git.
+[build]
+  publish = "."
+
+# Netlify's default for every file is `public, max-age=0, must-revalidate`,
+# revalidated by ETag. That is exactly right for index.html and style.css,
+# which are not content-hashed — a long max-age would strand visitors on a
+# stale copy after a deploy. The rules below only override that default for
+# assets whose bytes effectively never change.
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Strict-Transport-Security = "max-age=31536000"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/webfonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# No SPA fallback rewrite. This is a single page with in-page anchors, so an
+# unknown URL should return a real 404 rather than a 200 copy of the homepage.
