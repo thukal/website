@@ -501,16 +501,19 @@ a { color: inherit; text-decoration: none; }
 	transform: translate(0, 0) scale(1);
 	opacity: 1;
 }
+/* Once the entrance is done, the script drives .dot-wrap directly (cursor
+   push), so the settle transition has to get out of the way. */
+#particles.is-live .dot-wrap { transition: none; }
 
 #particles circle {
 	transform-box: fill-box;
 	transform-origin: center;
-	animation: drift var(--dur) ease-in-out var(--delay) infinite alternate;
+	animation: drift var(--dur) ease-in-out var(--ddelay) infinite alternate;
 }
 
 @keyframes drift {
-	from { transform: translate(0, 0); }
-	to   { transform: translate(var(--driftx), var(--drifty)); }
+	from { transform: translate(0, 0) scale(1); }
+	to   { transform: translate(var(--driftx), var(--drifty)) scale(var(--scale)); }
 }
 
 @media (prefers-reduced-motion: reduce) {
