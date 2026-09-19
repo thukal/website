@@ -5,11 +5,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Thukal — products &amp; custom software</title>
-	<meta name="description" content="Thukal is a product company and custom software studio. We ship products of our own, and build custom software for businesses.">
+	<title>Thukal — software products for Indian business</title>
+	<meta name="description" content="Thukal builds and runs software products for Indian businesses — Vasool for loan collection, Manitham HRMS for attendance and payroll, and Kannadi.AI for retail.">
 
-	<meta property="og:title" content="Thukal — products &amp; custom software">
-	<meta property="og:description" content="We ship products of our own, and build custom software for businesses.">
+	<meta property="og:title" content="Thukal — software products for Indian business">
+	<meta property="og:description" content="Vasool for loan collection, Manitham HRMS for attendance and payroll. Products we build, ship and run ourselves.">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://thukal.io/">
 	<meta property="og:image" content="https://thukal.io/images/logo.png">
@@ -28,6 +28,51 @@
 	<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Ties the three product domains to the parent brand for search engines.
+	     No offers/aggregateRating: no pricing is public, and invented ratings
+	     are a manual-action risk. -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"@id": "https://thukal.io/#organization",
+		"name": "Thukal",
+		"url": "https://thukal.io/",
+		"logo": "https://thukal.io/images/logo.png",
+		"email": "hello@thukal.in",
+		"telephone": "+91-70900-06577",
+		"foundingDate": "2025",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Salem",
+			"addressRegion": "Tamil Nadu",
+			"addressCountry": "IN"
+		},
+		"owns": [
+			{
+				"@type": "SoftwareApplication",
+				"name": "Vasool",
+				"url": "https://vasool.app",
+				"applicationCategory": "BusinessApplication",
+				"description": "Voice-entry loan collection for money lenders, finance companies and NBFCs. Works offline, with GPS route tracking and AI credit scoring."
+			},
+			{
+				"@type": "SoftwareApplication",
+				"name": "Manitham HRMS",
+				"url": "https://hrms.work",
+				"applicationCategory": "BusinessApplication",
+				"description": "Attendance, leave and payroll for Indian businesses, with PF, ESI and TDS compliance built in."
+			},
+			{
+				"@type": "SoftwareApplication",
+				"name": "Kannadi.AI",
+				"applicationCategory": "BusinessApplication",
+				"description": "An AI mirror for retail: customers see how a product looks on them in seconds."
+			}
+		]
+	}
+	</script>
 </head>
 <body>
 
@@ -40,9 +85,10 @@
 			<span>thukal</span>
 		</a>
 		<nav class="nav" aria-label="Primary">
-			<a href="#work">Work</a>
+			<a href="#products">Products</a>
 			<a href="#team">Team</a>
 			<a href="#careers">Careers</a>
+			<a class="nav-tel" href="tel:+917090006577"><span class="tel-full">+91 70900 06577</span><span class="tel-short">Call</span></a>
 			<a class="nav-cta" href="mailto:hello@thukal.in">Say hello</a>
 		</nav>
 	</div>
@@ -65,77 +111,87 @@
 		</div>
 
 		<div class="hero-inner">
-			<p class="eyebrow">Product company · custom software · est. 2025</p>
+			<p class="eyebrow">Product company · Salem, India · est. 2025</p>
 			<h1 class="hero-title">
 				Small pieces,<br>
 				<em>assembled well.</em>
 			</h1>
 			<p class="hero-lede">
-				Thukal builds and runs products of our own — and writes custom software
-				for businesses that have outgrown spreadsheets.
+				Thukal builds and runs the software Indian businesses work off every day —
+				loan collection, attendance and payroll, and AI for the shop floor.
 			</p>
 			<div class="hero-actions">
-				<a class="btn" href="mailto:hello@thukal.in">Start a project</a>
-				<a class="btn-quiet" href="#work">See what we've built</a>
+				<a class="btn" href="#vasool">See Vasool</a>
+				<a class="btn-quiet" href="mailto:hello@thukal.in?subject=Demo%20request">Book a demo</a>
 			</div>
 		</div>
 	</section>
 
-	<!-- ───────────────────────────  SERVICES  ─────────────────────────── -->
-	<section class="band" id="services">
+	<!-- ───────────────────────────  FLAGSHIP  ─────────────────────────── -->
+	<section class="band" id="vasool">
 		<div class="band-inner">
 			<div class="rail">
-				<h2 class="rail-label">What we do</h2>
+				<h2 class="rail-label">Our flagship</h2>
+				<p class="rail-note">Collections as they actually happen — at the door.</p>
 			</div>
 			<div class="col">
-				<ul class="services">
-					<li class="service">
-						<h3>Custom business software</h3>
-						<p>The system your operation actually runs on — billing, inventory, scheduling, reporting. Built around how you already work, not around a template.</p>
-					</li>
-					<li class="service">
-						<h3>Web and mobile apps</h3>
-						<p>Customer-facing products that hold up on a patchy connection and a three-year-old phone. Designed, built, and shipped to the stores.</p>
-					</li>
-					<li class="service">
-						<h3>Idea to first version</h3>
-						<p>You have a product in your head. We turn it into something real people can use in weeks, then keep cutting until only what matters is left.</p>
-					</li>
-					<li class="service">
-						<h3>Keeping it running</h3>
-						<p>Hosting, backups, monitoring, and the unglamorous fixes. Software you don't have to think about is the point.</p>
-					</li>
-				</ul>
+				<div class="flagship">
+					<div class="flagship-copy">
+						<h3 class="flagship-name">Vasool</h3>
+						<p class="flagship-lede">
+							Voice-entry loan collection. A collection agent standing at a
+							customer's door speaks the amount in their own language and moves
+							on — no typing, no signal needed, no evening spent copying a
+							notebook into a computer.
+						</p>
+
+						<ul class="caps">
+							<li>Voice-entry daily collections, in regional languages</li>
+							<li>Works fully offline, syncs when the phone finds signal</li>
+							<li>GPS route management and field staff tracking</li>
+							<li>Daily, weekly, gold, property and chit-fund loans</li>
+							<li>AI credit scoring before you lend</li>
+							<li>Audit trails, KYC storage, PDF receipts, 12+ reports</li>
+						</ul>
+
+						<p class="flagship-who">
+							Built to scale with you — from a single money lender with one
+							route, to a multi-branch finance company, to a regulated NBFC.
+						</p>
+
+						<div class="flagship-actions">
+							<a class="btn" href="https://vasool.app">vasool.app</a>
+							<a class="btn-quiet" href="mailto:hello@thukal.in?subject=Vasool%20demo">Book a demo</a>
+						</div>
+					</div>
+
+					<!-- Product shot goes here. Swap this comment for:
+					     <div class="shot"><img src="images/vasool-app.png" alt="The Vasool collection screen, showing a route's customers for the day" width="520" height="640"></div> -->
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- ───────────────────────────  WORK  ─────────────────────────── -->
-	<section class="band band-mist" id="work">
+	<!-- ───────────────────────────  PRODUCTS  ─────────────────────────── -->
+	<section class="band band-mist" id="products">
 		<div class="band-inner">
 			<div class="rail">
-				<h2 class="rail-label">Our work</h2>
-				<p class="rail-note">Products we own — built, shipped, and run by us.</p>
+				<h2 class="rail-label">Also ours</h2>
+				<p class="rail-note">Built, shipped and run by the same team.</p>
 			</div>
 			<div class="col">
 				<ul class="work">
 					<li class="card">
 						<span class="tag tag-product">Our product</span>
-						<h3>Vasool</h3>
-						<p>Loan management for microfinance companies — daily, weekly, EMI, gold and product loans, chit funds and savings, with route-wise collections and a mobile app for staff in the field.</p>
-						<a class="card-link" href="https://vasool.app">vasool.app</a>
+						<h3>Manitham HRMS</h3>
+						<p>Nine modules covering employees, attendance, leave, payroll and records. Punches arrive by biometric device, GPS or browser; payroll works out PF, ESI and TDS, with every line explaining its own arithmetic. A WhatsApp assistant answers the questions staff would otherwise ask HR. Month-end is generate, lock, pay.</p>
+						<a class="card-link" href="https://hrms.work">hrms.work</a>
 					</li>
 					<li class="card">
-						<span class="tag tag-product">Our product</span>
+						<span class="tag tag-soon">In development</span>
 						<h3>Kannadi.AI</h3>
 						<p>An AI mirror for retail. A customer photographs a product and themselves on the shop's tablet, and sees how it looks on them in seconds. <span lang="ta">கண்ணாடி</span> is Tamil for mirror.</p>
-						<a class="card-link" href="https://kannadi.ai">kannadi.ai</a>
-					</li>
-					<li class="card">
-						<span class="tag tag-product">Our product</span>
-						<h3>HRMS</h3>
-						<p>Attendance and payroll for factories and offices. Biometric punches come straight off the device, become attendance, and turn into payslips — PF, ESI, professional tax and TDS worked out, with every line explaining its own arithmetic. Month-end is generate, lock, pay.</p>
-						<a class="card-link" href="https://hrms.work">hrms.work</a>
+						<p class="card-note">Not open yet — <a href="mailto:hello@thukal.in?subject=Kannadi.AI">ask to see it early</a></p>
 					</li>
 				</ul>
 			</div>
@@ -209,7 +265,7 @@
 					<h3>We're small, and we like it that way.</h3>
 					<p>
 						No open roles listed right now — but if you write good software and want
-						to own what you build rather than tick off tickets, write to us anyway.
+						to own a product rather than tick off tickets, write to us anyway.
 						Tell us what you've made and what you'd like to make next.
 					</p>
 					<a class="btn" href="mailto:hello@thukal.in?subject=Working%20at%20Thukal">hello@thukal.in</a>
@@ -221,9 +277,10 @@
 	<!-- ───────────────────────────  CONTACT  ─────────────────────────── -->
 	<section class="contact" id="contact">
 		<div class="contact-inner">
-			<p class="eyebrow">Have something to build?</p>
-			<a class="contact-mail" href="mailto:hello@thukal.in">hello@thukal.in</a>
-			<p class="contact-note">Tell us what's broken or what's missing. We'll tell you honestly whether we're the right people for it.</p>
+			<p class="eyebrow">Want to see one of these running?</p>
+			<a class="contact-mail" href="mailto:hello@thukal.in?subject=Demo%20request">hello@thukal.in</a>
+			<p class="contact-phone"><a href="tel:+917090006577">+91 70900 06577</a></p>
+			<p class="contact-note">Tell us how you run things today. We'll show you the product on your own numbers, and say honestly whether it fits.</p>
 		</div>
 	</section>
 
@@ -235,16 +292,25 @@
 			<img src="images/logo.png" alt="" width="26" height="20">
 			<span>Thukal</span>
 		</p>
+		<p class="footer-products">
+			<a href="https://vasool.app">Vasool</a>
+			<a href="https://hrms.work">Manitham HRMS</a>
+		</p>
 		<p class="footer-meaning">
 			<em>thukal</em> · <span lang="ta">துகள்</span> · Tamil for <em>particle</em>. Good software is a great many small decisions.
 		</p>
 		<p class="footer-meta">
 			<span>Salem, India</span>
+			<a href="tel:+917090006577">+91 70900 06577</a>
 			<span>&copy; <span id="year">2026</span> Thukal</span>
 		</p>
 	</div>
 </footer>
 
 <script src="js/particles.js" defer></script>
+
+<!-- Cloudflare Web Analytics. PLACEHOLDER TOKEN — reports nothing until the
+     real beacon token from the Cloudflare dashboard replaces CF_BEACON_TOKEN. -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "CF_BEACON_TOKEN"}'></script>
 </body>
 </html>

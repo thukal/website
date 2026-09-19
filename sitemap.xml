@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- One page, and in-page anchors are not separate URLs. Products live on
+     their own domains and carry their own sitemaps. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://thukal.io/</loc>
+		<lastmod>2026-09-19</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+	</url>
+</urlset>
