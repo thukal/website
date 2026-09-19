@@ -6,10 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Thukal — software products for Indian business</title>
-	<meta name="description" content="Thukal builds and runs software products for Indian businesses — Vasool for loan collection, Manitham HRMS for attendance and payroll, and Kannadi.AI for retail.">
+	<meta name="description" content="Thukal builds and runs software products for Indian businesses — Vasool for loan collection, Nalam for hospitals and labs, Manitham HRMS for attendance and payroll, and Kannadi.AI for retail.">
 
 	<meta property="og:title" content="Thukal — software products for Indian business">
-	<meta property="og:description" content="Vasool for loan collection, Manitham HRMS for attendance and payroll. Products we build, ship and run ourselves.">
+	<meta property="og:description" content="Vasool for loan collection, Nalam for hospitals and labs, Manitham HRMS for attendance and payroll. Products we build, ship and run ourselves.">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://thukal.io/">
 	<meta property="og:image" content="https://thukal.io/images/logo.png">
@@ -42,6 +42,7 @@
 		"logo": "https://thukal.io/images/logo.png",
 		"email": "hello@thukal.in",
 		"telephone": "+91-70900-06577",
+		"slogan": "Building products for businesses",
 		"foundingDate": "2025",
 		"address": {
 			"@type": "PostalAddress",
@@ -63,6 +64,13 @@
 				"url": "https://hrms.work",
 				"applicationCategory": "BusinessApplication",
 				"description": "Attendance, leave and payroll for Indian businesses, with PF, ESI and TDS compliance built in."
+			},
+			{
+				"@type": "SoftwareApplication",
+				"name": "Nalam",
+				"url": "https://nalam.care",
+				"applicationCategory": "HealthApplication",
+				"description": "Hospital, laboratory and clinic management — patients, appointments, lab orders, pharmacy stock, billing and insurance claims, with direct lab instrument integration."
 			},
 			{
 				"@type": "SoftwareApplication",
@@ -111,14 +119,15 @@
 		</div>
 
 		<div class="hero-inner">
-			<p class="eyebrow">Product company · Salem, India · est. 2025</p>
+			<p class="eyebrow">Building products for businesses</p>
 			<h1 class="hero-title">
 				Small pieces,<br>
 				<em>assembled well.</em>
 			</h1>
 			<p class="hero-lede">
 				Thukal builds and runs the software Indian businesses work off every day —
-				loan collection, attendance and payroll, and AI for the shop floor.
+				loan collection, attendance and payroll, hospital and lab management,
+				billing, and AI for the shop floor.
 			</p>
 			<div class="hero-actions">
 				<a class="btn" href="#vasool">See Vasool</a>
@@ -177,7 +186,7 @@
 		<div class="band-inner">
 			<div class="rail">
 				<h2 class="rail-label">Also ours</h2>
-				<p class="rail-note">Built, shipped and run by the same team.</p>
+				<p class="rail-note">Built and run by the same team.</p>
 			</div>
 			<div class="col">
 				<ul class="work">
@@ -186,6 +195,18 @@
 						<h3>Manitham HRMS</h3>
 						<p>Nine modules covering employees, attendance, leave, payroll and records. Punches arrive by biometric device, GPS or browser; payroll works out PF, ESI and TDS, with every line explaining its own arithmetic. A WhatsApp assistant answers the questions staff would otherwise ask HR. Month-end is generate, lock, pay.</p>
 						<a class="card-link" href="https://hrms.work">hrms.work</a>
+					</li>
+					<li class="card">
+						<span class="tag tag-product">Our product</span>
+						<h3>Nalam</h3>
+						<p>One platform, three systems — hospital, laboratory and clinic. A patient goes from registration to discharge without paper: appointments and doctor availability, test orders and sample tracking, pharmacy stock with expiry, itemised bills and insurance claims. Lab instruments report into it directly, and KK AI answers questions about the day in plain language.</p>
+						<a class="card-link" href="https://nalam.care">nalam.care</a>
+					</li>
+					<li class="card">
+						<span class="tag tag-soon">In development</span>
+						<h3>Billing</h3>
+						<p>Invoicing and day-to-day billing, for businesses running it out of a book or a spreadsheet today.</p>
+						<p class="card-note">Not open yet — <a href="mailto:hello@thukal.in?subject=Billing%20software">ask to see it early</a></p>
 					</li>
 					<li class="card">
 						<span class="tag tag-soon">In development</span>
@@ -288,23 +309,35 @@
 
 <footer class="footer">
 	<div class="footer-inner">
-		<p class="footer-name">
-			<img src="images/logo.png" alt="" width="26" height="20">
-			<span>Thukal</span>
-		</p>
-		<p class="footer-products">
+		<div class="footer-brand">
+			<p class="footer-name">
+				<img src="images/logo.png" alt="" width="26" height="20">
+				<span>Thukal</span>
+			</p>
+			<p class="footer-meaning">
+				<em>thukal</em> · <span lang="ta">துகள்</span> · Tamil for <em>particle</em>.
+				Small pieces, chosen carefully.
+			</p>
+		</div>
+
+		<nav class="footer-col" aria-label="Products">
+			<p class="footer-head">Products</p>
 			<a href="https://vasool.app">Vasool</a>
+			<a href="https://nalam.care">Nalam</a>
 			<a href="https://hrms.work">Manitham HRMS</a>
-		</p>
-		<p class="footer-meaning">
-			<em>thukal</em> · <span lang="ta">துகள்</span> · Tamil for <em>particle</em>. Good software is a great many small decisions.
-		</p>
-		<p class="footer-meta">
-			<span>Salem, India</span>
+			<span>Billing — soon</span>
+			<span>Kannadi.AI — soon</span>
+		</nav>
+
+		<div class="footer-col">
+			<p class="footer-head">Contact</p>
+			<a href="mailto:hello@thukal.in">hello@thukal.in</a>
 			<a href="tel:+917090006577">+91 70900 06577</a>
-			<span>&copy; <span id="year">2026</span> Thukal</span>
-		</p>
+			<span>Salem, India</span>
+		</div>
 	</div>
+
+	<p class="footer-base">&copy; <span id="year">2026</span> Thukal</p>
 </footer>
 
 <script src="js/particles.js" defer></script>
